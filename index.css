@@ -1,6 +1,6 @@
 /* === GENERIC === */
 :root {
-  --primary: #07db7f;
+  --primary: #07db5d;
   --secondary: #0aae67;
 }
 body {
@@ -84,6 +84,7 @@ header > .logo {
   padding: 2.1em;
 }
 #faqs ul {
+  margin-top: 1em;
   list-style: none;
   padding: 0;
   border-top: 1px solid var(--secondary);
