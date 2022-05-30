@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dryer Vent Cleaning Services" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Dryer Vent Cleaning | Newport, KY</title>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <a class="logo" href="index.html">
+          <img src="images/sock.png" alt="" height="30px" />
+          <span>Lost Sock</span>
+        </a>
+        <a href="booking.html" class="button">Book Now &#8250;</a>
+      </header>
+      <div class="no-split">
+        <section id="about">
+          <h1>About Us</h1>
+          <p>
+            Lost Sock Dryer Services provides full-service dryer vent cleaning
+            in the Greater Cincinnati area.
+          </p>
+          <p>
+            We maintain low prices and exceptional service by doing one thing,
+            and doing it extremely well.
+          </p>
+          <p>
+            If your clothes are still damp or birds are nesting in your vent,
+            you can trust us to provide the best service.
+          </p>
+          <h3>Currently Serving:</h3>
+          <ul class="fa-ul">
+            <li>
+              <span class="fa-li"><i class="fas fa-angle-right"></i></span>
+              Boone County, KY
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-angle-right"></i></span>
+              Campbell County, KY
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-angle-right"></i></span>
+              Kenton County, KY
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-angle-right"></i></span
+              >Hamilton County, OH
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class="links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="" class="button">Book Now &#8250;</a>
+      </div>
+      <p>Lost Sock 2022</p>
+    </footer>
+  </body>
+  <script>
+    function toggleDropdowns() {
+      for (const child of this.childNodes) {
+        for (const gchild of child.childNodes) {
+          if (gchild.classList) {
+            for (const className of gchild.classList) {
+              if (className == "content") {
+                gchild.classList.toggle("hide");
+              }
+            }
+          }
+        }
+      }
+      // for (const dropdown of dropdowns) {
+      //   dropdown.classList.add("hide");
+      // }
+    }
+    const dropdowns = document.querySelectorAll("#faqs li");
+    for (const dropdown of dropdowns) {
+      dropdown.addEventListener("click", toggleDropdowns);
+    }
+  </script>
+  <script
+    type="text/javascript"
+    src="https://assets.calendly.com/assets/external/widget.js"
+    async
+  ></script>
+</html>
